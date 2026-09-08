@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 | 個人品牌作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Google Fonts 提升字體質感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">YOUR NAME.</div>
+        <ul class="nav-links">
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#timeline">大學歷程</a></li>
+            <li><a href="#projects">代表作品</a></li>
+            <li><a href="#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主視覺區 (Hero) -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="avatar-placeholder">
+                <!-- 替換成你的大頭照圖片 -->
+                <img src="https://via.placeholder.com/150" alt="個人頭像" id="avatar">
+            </div>
+            <h1>嗨，我是 <span class="highlight">[你的名字]</span></h1>
+            <p class="subtitle">[你的專業定位 / 專長，例如：資訊工程系 | 前端開發者 | 數位行銷創作者]</p>
+            <p class="bio-short">用大學四年的探索與積累，打造能創造價值的個人 IP。</p>
+            <a href="#projects" class="btn primary-btn">查看作品</a>
+            <a href="#contact" class="btn secondary-btn">聯絡我</a>
+        </div>
+    </header>
+
+    <!-- 關於我區塊 -->
+    <section id="about" class="section">
+        <h2>About Me | 關於我</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>這裡填寫你的簡短自我介紹。說明你的核心價值、興趣領域以及大學四年最重視的能力培養。</p>
+                <div class="skills-tags">
+                    <span class="tag">專案管理</span>
+                    <span class="tag">UI/UX 設計</span>
+                    <span class="tag">Python / JavaScript</span>
+                    <span class="tag">社群營運</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 大學四年歷程 Timeline -->
+    <section id="timeline" class="section">
+        <h2>University Journey | 四年累積</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">大一 (2023)</div>
+                <div class="timeline-content">
+                    <h3>基礎奠定與社群參與</h3>
+                    <p>加入學會/社團，擔任幹部；修習基礎核心課程，取得全系名前 10%。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">大二 (2024)</div>
+                <div class="timeline-content">
+                    <h3>跨界探索與競賽體驗</h3>
+                    <p>參加全國性商業/技術競賽，獲得佳作；開始經營個人自媒體/技術 Blog。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">大三 (2025)</div>
+                <div class="timeline-content">
+                    <h3>專題實務與企業實習</h3>
+                    <p>於 [某公司/單位] 擔任實習生；負責專題研究，獨立完成關鍵模組開發。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">大四 (2026)</div>
+                <div class="timeline-content">
+                    <h3>成果整合與個人 IP 輸出</h3>
+                    <p>完成畢業專題，公開發表成果；籌備個人品牌，邁向職場/研究所。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 代表作品與成果 Projects -->
+    <section id="projects" class="section">
+        <h2>Portfolio | 代表作品</h2>
+        
+        <!-- 分類過濾按鈕 -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">全部作品</button>
+            <button class="filter-btn" data-filter="tech">技術/專題</button>
+            <button class="filter-btn" data-filter="design">設計/創作</button>
+            <button class="filter-btn" data-filter="activity">活動/競賽</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- 作品卡片 1 -->
+            <div class="project-card" data-category="tech">
+                <div class="card-img" style="background-color: #e2e8f0;"></div>
+                <div class="card-body">
+                    <span class="category-badge">技術/專題</span>
+                    <h3>畢業專題：智慧系統開發</h3>
+                    <p>利用 Python 與 JS 打造的智慧解決方案，解決某特定痛點問題。</p>
+                    <a href="#" target="_blank" class="card-link">查看詳情 &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 作品卡片 2 -->
+            <div class="project-card" data-category="design">
+                <div class="card-img" style="background-color: #cbd5e1;"></div>
+                <div class="card-body">
+                    <span class="category-badge">設計/創作</span>
+                    <h3>校園活動視覺設計與 IP 建立</h3>
+                    <p>主導大型活動視覺規劃，並設計周邊文創商品與宣傳海報。</p>
+                    <a href="#" target="_blank" class="card-link">查看詳情 &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 作品卡片 3 -->
+            <div class="project-card" data-category="activity">
+                <div class="card-img" style="background-color: #94a3b8;"></div>
+                <div class="card-body">
+                    <span class="category-badge">活動/競賽</span>
+                    <h3>全國商業創新大賽 - 第一名</h3>
+                    <p>帶領 5 人團隊，從市場調研、產品原型至簡報提案全程參與。</p>
+                    <a href="#" target="_blank" class="card-link">查看詳情 &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡方式 Contact -->
+    <section id="contact" class="section">
+        <h2>Connect | 聯絡我</h2>
+        <p>歡迎與我交流合作，或了解更多我的經歷！</p>
+        <div class="contact-links">
+            <a href="mailto:your.email@example.com" class="contact-btn">✉️ Email</a>
+            <a href="https://github.com/yourusername" target="_blank" class="contact-btn">🐙 GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-btn">💼 LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 [你的名字]. Built with HTML/CSS/JS. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
